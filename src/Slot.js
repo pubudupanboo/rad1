@@ -1,30 +1,31 @@
-const NewStructure = () => {
+const Slot = () => {
     return ( 
 
         <div className="container-lg my-5">
-            <h1>New Structure</h1>
+            <h1>Slot</h1>
             <div className="row">
             <div class="col">
-                <div className="p-2 text-black">Order</div>
+                <div className="p-2 text-black">Date</div>
             </div>
             <div class="col">
-                <div className="p-2 text-black"><input type="text" /></div>
-            </div>
-            </div>
-            <div className="row">
-            <div class="col">
-                <div className="p-2 text-black">Hours</div>
-            </div>
-            <div class="col">
-                <div className="p-2 text-black"><input type="text" /></div>
+                <div className="p-2 text-black"><input type="text" name="date" id="date" placeholder="03/05/2022"/></div>
             </div>
             </div>
             <div className="row">
             <div class="col">
-                <div className="p-2 text-black">Rate</div>
+                <div className="p-2 text-black">Start Time</div>
+            </div>
+           
+            <div class="col">
+                <div className="p-2 text-black"><input data-provide="datepicker" placeholder="09:30 AM"/></div>
+            </div>
+            </div>
+            <div className="row">
+            <div class="col">
+                <div className="p-2 text-black">End Time</div>
             </div>
             <div class="col">
-                <div className="p-2 text-black"> <input type="text" /> </div>
+                <div className="p-2 text-black"> <input type="text" placeholder="10:30 AM"/> </div>
             </div>
             </div>
             <div className="row">
@@ -45,4 +46,4 @@ const NewStructure = () => {
      );
 }
  
-export default NewStructure;
+export default Slot;
